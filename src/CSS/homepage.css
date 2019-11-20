@@ -1,12 +1,20 @@
+#parent {
+   text-align: center;
+}
+
 #main-component {
    position: fixed;
    left: 0;
    text-align: center;
    width: 10;
+   overflow: auto;
+   display: inline-block;
+
 }
 
 #hotline-component {
    position: fixed;
+   margin-top: 95px;
    right: 0;
    background-color: #cfcdcc;
    top: 0px;
@@ -16,26 +24,38 @@
 }
 
 #hotline-text {
-   padding-top: ;
+   text-align: center;
    bottom: 10px;
 }
 
 .hotline-titles {
-   font-size: 10;
+   font-size: 20px;
+   display: inline-block;
 }
 
 .hotline-numbers {
-   font-size: 3;
+   font-size: 10px;
+   display: inline-block;
 }
 #navbar-button {
-   width: 200px;
+   width: 220px;
    height: 200px;
    background-color: #7d696c;
    outline-color: #7a0f21;
    color: white;
+   display: inline-block;
 }
 #navbar-button-survey {
    background-color: #7d696c;
    outline-color: #7a0f21;
    color: white;
+}
+#col {
+   padding-bottom: 10px;
+}
+
+#button-grid{
+   padding-bottom: 10px;
+   padding-top: 10px;
+   text-align: center;
 }

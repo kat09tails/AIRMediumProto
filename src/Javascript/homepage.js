@@ -18,43 +18,45 @@ import phone from "../Images/ButtonImages/phone.png";
 class Homepage extends React.Component{
    render (){
       return (
-         <div>
+         <div id="parent">
             <div id="main-component">
-               <Button height="50px" width="50px" variant="outline-dark" id="navbar-button-survey"><Image src={survey} height="50px" width="50px" /><h1>Unsure, click to take a survey</h1></Button>
+               <Button height="50px" width="50px" variant="outline-dark" id="navbar-button-survey"><Image src={survey} height="50px" width="50px" /><h1>Unsure? click to take a survey</h1></Button>
                <Container id="button-grid">
                   <Row>
-                     <Col><Button id="navbar-button" variant="outline-dark"><Image src={emergency} height="50px" width="50px" /><h1>Emergency</h1></Button></Col>
-                     <Col><Button id="navbar-button" variant="outline-dark"><Image src={food} height="50px" width="50px" /><h1>Food</h1></Button></Col>
-                     <Col><Button id="navbar-button" variant="outline-dark"><Image src={housing} height="50px" width="50px" /><h1>Housing</h1></Button></Col>
+                     <Col id="col"><Button id="navbar-button" variant="outline-dark"><Image src={emergency} height="50px" width="50px" /><h1>Emergency</h1></Button></Col>
+                     <Col id="col"><Button id="navbar-button" variant="outline-dark"><Image src={food} height="50px" width="50px" /><h1>Food</h1></Button></Col>
+                     <Col id="col"><Button id="navbar-button" variant="outline-dark"><Image src={housing} height="50px" width="50px" /><h1>Housing</h1></Button></Col>
                   </Row>
                   <Row>
-                     <Col><Button id="navbar-button" variant="outline-dark"><Image src={goods} height="50px" width="50px" /><h1>Goods</h1></Button></Col>
-                     <Col><Button id="navbar-button" variant="outline-dark"><Image src={transit} height="50px" width="50px" /><h1>Transit</h1></Button></Col>
-                     <Col><Button id="navbar-button" variant="outline-dark"><Image src={health} height="50px" width="50px" /><h1>Health</h1></Button></Col>
+                     <Col id="col"><Button id="navbar-button" variant="outline-dark"><Image src={goods} height="50px" width="50px" /><h1>Goods</h1></Button></Col>
+                     <Col id="col"><Button id="navbar-button" variant="outline-dark"><Image src={transit} height="50px" width="50px" /><h1>Transit</h1></Button></Col>
+                     <Col id="col"><Button id="navbar-button" variant="outline-dark"><Image src={health} height="50px" width="50px" /><h1>Health</h1></Button></Col>
                   </Row>
                   <Row>
-                     <Col><Button id="navbar-button" variant="outline-dark"><Image src={money} height="50px" width="50px" /><h1>Money</h1></Button></Col>
-                     <Col><Button id="navbar-button" variant="outline-dark"><Image src={care} height="50px" width="50px" /><h1>Care</h1></Button></Col>
-                     <Col><Button id="navbar-button" variant="outline-dark"><Image src={education} height="50px" width="50px" /><h1>Education</h1></Button></Col>
+                     <Col id="col"><Button id="navbar-button" variant="outline-dark"><Image src={money} height="50px" width="50px" /><h1>Money</h1></Button></Col>
+                     <Col id="col"><Button id="navbar-button" variant="outline-dark"><Image src={care} height="50px" width="50px" /><h1>Care</h1></Button></Col>
+                     <Col id="col"><Button id="navbar-button" variant="outline-dark"><Image src={education} height="50px" width="50px" /><h1>Education</h1></Button></Col>
                   </Row>
                   <Row>
-                     <Col><Button id="navbar-button" variant="outline-dark"><Image src={work} height="50px" width="50px" /><h1>Work</h1></Button></Col>
-                     <Col><Button id="navbar-button" variant="outline-dark"><Image src={legal} height="50px" width="50px" /><h1>Legal</h1></Button></Col>
+                     <Col id="col"><Button id="navbar-button" variant="outline-dark"><Image src={work} height="50px" width="50px" /><h1>Work</h1></Button></Col>
+                     <Col id="col"><Button id="navbar-button" variant="outline-dark"><Image src={legal} height="50px" width="50px" /><h1>Legal</h1></Button></Col>
                   </Row>
                </Container>
                
 
-               <div className="event-component">
+               {/* <div className="event-component">
 
-               </div>
+               </div> */}
             </div>
             <div id="hotline-component">
                <div id="hotline-text">
-                  <Image src={phone} height="50px" width="50px" />
+                  <Image src={phone} height="30px" width="30px" />
                   <h1 class="hotline-titles">Emergency</h1>
                   <h2 class="hotline-numbers">911</h2>
+                  <Image src={phone} height="30px" width="30px" />
                   <h1 class="hotline-titles">Suicide Hotline</h1>
                   <h2 class="hotline-numbers">1-800-273-8255</h2>
+                  <Image src={phone} height="30px" width="30px" />
                   <h1 class="hotline-titles">Domestic Violence Hotline</h1>
                   <h2 class="hotline-numbers">1−800−799−7233</h2>
                </div>
