@@ -1,0 +1,60 @@
+.exit_button {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+ }
+
+ #flash-button{
+	background:red;
+	padding:5px 10px;
+	color:#fff;
+	border:none;
+   border-radius:5px;
+   height: 70px;
+	
+	animation-name: flash;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+}
+
+.center {
+   position: absolute;
+   right: 0px;
+   left: 0px;
+   bottom: 0px;
+   align-self: center;
+}
+
+#button-exit-text {
+   /*vertical-align: text-top;*/
+   bottom: 50px;
+   position: absolute;
+   left: 0;
+   right: 0;
+   height: 50%;
+   font-size: 40px;
+}
+
+#button-description {
+   /*vertical-align: text-bottom;*/
+   bottom: 0px;
+   position: absolute;
+   left: 0;
+   right: 0;
+   height: 50%;
+
+   
+}
+
+@keyframes flash {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.75; }
+    100% {opacity: 1.0; }
+}
+

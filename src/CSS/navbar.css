@@ -1,0 +1,38 @@
+#navbackground {
+   background-color: #4D000D;
+}
+
+#logo {
+   color: white;
+   font-family: 'Lato', sans-serif;
+   font-size: 20px;
+}
+
+#login-button {
+   background-color: white;
+   color: black;
+}
+
+.navbar {
+   min-height: 80px;
+ }
+
+ #organization-text {
+    padding-right: 10px;
+    color: white;
+ }
+
+ #login-info {
+    text-align: right;
+ }
+
+ #basic-navbar-nav {
+   margin-right: auto;
+   color: white;
+ }
+
+ .right {
+    position: absolute;
+    right: 50px;
+    align-self: center;
+ }
