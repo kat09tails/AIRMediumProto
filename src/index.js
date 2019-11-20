@@ -4,6 +4,7 @@ import $ from 'jquery';
 import './CSS/index.css';
 import Navbar from './Javascript/navbar'
 import ExitButton from './Javascript/exitbutton'
+import Homepage from './Javascript/homepage'
 
 // const my_nav = Navbar;
 // const my_footer = ExitButton;
@@ -18,4 +19,4 @@ import ExitButton from './Javascript/exitbutton'
 //  };
 
 //ReactDOM.render(<Navbar />, document.getElementById('root'));
-ReactDOM.render(<div><Navbar />, <ExitButton /> </div>, document.getElementById('root'));
+ReactDOM.render(<div><Navbar />, <Homepage />, <ExitButton /> </div>, document.getElementById('root'));

@@ -17,7 +17,7 @@ class nav extends React.Component {
       
       <Navbar.Brand href="#home" id='logo' bsPrefix="Logo"><Image src={logo} href="#home" alt="AIR ASUM Information and Referral" /></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar.Collapse id="basic-navbar-nav" height='20px'>
          <Nav id="login-info" class="right">
             <Navbar.Text id="organization-text">Organization</Navbar.Text>
             <Button id="login-button" variant="outline-light" size="sm" href='#'>Login</Button>

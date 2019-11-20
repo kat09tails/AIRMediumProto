@@ -28,7 +28,8 @@
 
  #basic-navbar-nav {
    margin-right: auto;
-   color: white;
+   /*color: white;*/
+   background-color: #4D000D;
  }
 
  .right {

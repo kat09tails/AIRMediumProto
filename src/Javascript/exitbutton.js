@@ -6,7 +6,7 @@ class exitbutton extends React.Component{
    render(){
       return (
          <Nav className="exit_button" id="flash-button" className="center">
-         <Button id="flash-button" className ="center" href="https://www.google.com"><Navbar.Text id="button-exit-text">Exit Now</Navbar.Text><Navbar.Text id="button-description">Click this button to quickly go to Google.com</Navbar.Text></Button>
+         <Button id="flash-button" className ="center" href="https://www.google.com"><Navbar.Text id="button-exit-text">Exit Now</Navbar.Text><Navbar.Text id="button-description">If you are in an unsafe environment, click this button to quickly go to Google.com. Remember, clear your web history.</Navbar.Text></Button>
          </Nav>
       );
    }
