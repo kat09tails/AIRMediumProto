@@ -1,26 +1,34 @@
 #parent {
+   display: flex;
+}
+
+.centered {
    text-align: center;
+   float: center;
 }
 
 #main-component {
-   position: fixed;
-   left: 0;
+   position: relative;
    text-align: center;
-   width: 10;
-   overflow: auto;
+   width: 90%;
+   height: 100%;
    display: inline-block;
+   background-image: url("../Images/clocktower_cropped.jpg");
+   background-size: 100% 80%;
+   padding-top: 10px;
 
 }
 
 #hotline-component {
    position: fixed;
-   margin-top: 95px;
+   margin-top: -10px;
    right: 0;
    background-color: #cfcdcc;
    top: 0px;
-   height: 100%;
+   height: 110%;
    width: 10%;
    z-index: -1;
+   float: left;
 }
 
 #hotline-text {
@@ -34,28 +42,66 @@
 }
 
 .hotline-numbers {
-   font-size: 10px;
-   display: inline-block;
+   font-size: 15px;
 }
 #navbar-button {
    width: 220px;
    height: 200px;
-   background-color: #7d696c;
+   background-color: #b8b8b8;
    outline-color: #7a0f21;
-   color: white;
+   color: black;
    display: inline-block;
 }
 #navbar-button-survey {
-   background-color: #7d696c;
+   background-color: #b8b8b8;
    outline-color: #7a0f21;
-   color: white;
+   color: black;
 }
 #col {
    padding-bottom: 10px;
 }
 
 #button-grid{
+   position: relative;
+   left: 0;
    padding-bottom: 10px;
    padding-top: 10px;
    text-align: center;
+}
+
+#wrapper {
+   position: relative;
+   vertical-align: top;
+   display: inline-block;
+   text-align: center;
+   top: 120px;
+}
+
+#white-space {
+   padding-bottom: 300px;
+}
+
+.event-component {
+   position: absolute;
+   width: 100%;
+   height: 50px;
+}
+#event-table {
+   width: 100%;
+   outline: solid black;
+   height: 50px;
+   background-color: #b8b8b8;
+   color: black;
+}
+
+#events-heading {
+   outline: solid black;
+   background-color: #4D000D;
+   color: white;
+}
+
+#scrollable {
+   overflow-y: scroll;
+   text-align: left;
+   height: 200px;
 }

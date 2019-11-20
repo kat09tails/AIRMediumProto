@@ -19,4 +19,4 @@ import Homepage from './Javascript/homepage'
 //  };
 
 //ReactDOM.render(<Navbar />, document.getElementById('root'));
-ReactDOM.render(<div><Navbar />, <Homepage />, <ExitButton /> </div>, document.getElementById('root'));
+ReactDOM.render(<div><Navbar /><Homepage /><ExitButton /> </div>, document.getElementById('root'));

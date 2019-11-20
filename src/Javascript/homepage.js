@@ -21,7 +21,7 @@ class Homepage extends React.Component{
          <div id="parent">
             <div id="main-component">
                <Button height="50px" width="50px" variant="outline-dark" id="navbar-button-survey"><Image src={survey} height="50px" width="50px" /><h1>Unsure? click to take a survey</h1></Button>
-               <Container id="button-grid">
+               <Container id="button-grid" class ="centered">
                   <Row>
                      <Col id="col"><Button id="navbar-button" variant="outline-dark"><Image src={emergency} height="50px" width="50px" /><h1>Emergency</h1></Button></Col>
                      <Col id="col"><Button id="navbar-button" variant="outline-dark"><Image src={food} height="50px" width="50px" /><h1>Food</h1></Button></Col>
@@ -43,22 +43,58 @@ class Homepage extends React.Component{
                   </Row>
                </Container>
                
+ 
+               <div class="event-component">
+                  <table id= 'event-table' >
+                     <tr>
+                        <th id='events-heading'>Events</th>
+                     </tr>
+                     <div id="scrollable">
+                        <tr>
+                           <td>November 21, 2019</td>
+                        </tr>
+                           <td>Hot Meal</td>
+                        <tr>
+                           <td>- Poverello Center</td>
+                        </tr>
+                        <tr>
+                           <td>- Address:</td>
+                        </tr>
+                        <tr>
+                           <td>1110 W Broadway</td>
+                        </tr>
+                        <tr>
+                           <td>Missoula, MT 59802</td>
+                        </tr>
+                        <tr>
+                           <td>- Phone Number:</td>
+                        </tr>
+                        <tr>
+                           <td>xxx-xxx-xxxx</td>
+                        </tr>
+                     </div>
+                  </table>
 
-               {/* <div className="event-component">
-
-               </div> */}
+               </div>
+               <div id="white-space"></div>
             </div>
             <div id="hotline-component">
                <div id="hotline-text">
-                  <Image src={phone} height="30px" width="30px" />
-                  <h1 class="hotline-titles">Emergency</h1>
-                  <h2 class="hotline-numbers">911</h2>
-                  <Image src={phone} height="30px" width="30px" />
-                  <h1 class="hotline-titles">Suicide Hotline</h1>
-                  <h2 class="hotline-numbers">1-800-273-8255</h2>
-                  <Image src={phone} height="30px" width="30px" />
-                  <h1 class="hotline-titles">Domestic Violence Hotline</h1>
-                  <h2 class="hotline-numbers">1−800−799−7233</h2>
+                  <div id="wrapper">
+                  
+                     <h1 class="hotline-titles"><Image src={phone} height="30px" width="30px" />Emergency</h1>
+                     <h2 class="hotline-numbers">911</h2>
+                  </div>
+                  <div id="wrapper">
+                  
+                     <h1 class="hotline-titles"><Image src={phone} height="30px" width="30px" />Suicide Hotline</h1>
+                     <h2 class="hotline-numbers">1-800-273-8255</h2>
+                  </div>
+                  <div id="wrapper">
+                  
+                     <h1 class="hotline-titles"><Image src={phone} height="30px" width="30px" />Domestic Violence Hotline</h1>
+                     <h2 class="hotline-numbers">1−800−799−7233</h2>
+                  </div>
                </div>
             </div>
          </div>
