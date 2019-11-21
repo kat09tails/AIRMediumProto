@@ -15,12 +15,11 @@ import legal from "../Images/ButtonImages/legal.png";
 import survey from "../Images/ButtonImages/survey.png";
 import phone from "../Images/ButtonImages/phone.png";
 
-class Homepage extends React.Component{
+export default class Homepage extends React.Component{
    render (){
       return (
          <div id="parent">
             <div id="main-component">
-               <Button height="50px" width="50px" variant="outline-dark" id="navbar-button-survey"><Image src={survey} height="50px" width="50px" /><h1>Unsure? click to take a survey</h1></Button>
                <Container id="button-grid" class ="centered">
                   <Row>
                      <Col id="col"><Button id="navbar-button" variant="outline-dark"><Image src={emergency} height="50px" width="50px" /><h1>Emergency</h1></Button></Col>
@@ -42,6 +41,8 @@ class Homepage extends React.Component{
                      <Col id="col"><Button id="navbar-button" variant="outline-dark"><Image src={legal} height="50px" width="50px" /><h1>Legal</h1></Button></Col>
                   </Row>
                </Container>
+               <Button height="50px" width="50px" variant="outline-dark" id="navbar-button-survey"><Image src={survey} height="50px" width="50px" /><h1>Unsure? click to take a survey</h1></Button>
+
                
  
                <div class="event-component">
@@ -81,17 +82,14 @@ class Homepage extends React.Component{
             <div id="hotline-component">
                <div id="hotline-text">
                   <div id="wrapper">
-                  
                      <h1 class="hotline-titles"><Image src={phone} height="30px" width="30px" />Emergency</h1>
                      <h2 class="hotline-numbers">911</h2>
                   </div>
                   <div id="wrapper">
-                  
                      <h1 class="hotline-titles"><Image src={phone} height="30px" width="30px" />Suicide Hotline</h1>
                      <h2 class="hotline-numbers">1-800-273-8255</h2>
                   </div>
                   <div id="wrapper">
-                  
                      <h1 class="hotline-titles"><Image src={phone} height="30px" width="30px" />Domestic Violence Hotline</h1>
                      <h2 class="hotline-numbers">1−800−799−7233</h2>
                   </div>
@@ -102,4 +100,4 @@ class Homepage extends React.Component{
    }
 };
 
-export default Homepage;
+//export default Homepage;
