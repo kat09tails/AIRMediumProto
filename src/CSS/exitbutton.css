@@ -6,6 +6,7 @@
    background-color: red;
    color: white;
    text-align: center;
+   z-index: 1;
  }
 
  #flash-button{
@@ -21,7 +22,7 @@
 	animation-duration: 1s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
-
+   z-index: 1;
 }
 
 .center {

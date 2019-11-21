@@ -9,13 +9,13 @@ import logo from '../Images/Logo.png';
 
 
 
-class nav extends React.Component {
+export default class nav extends React.Component {
    
    render() {
       return(
      <Navbar expand="xl" id ="navbackground">
       
-      <Navbar.Brand href="#home" id='logo' bsPrefix="Logo"><Image src={logo} href="#home" alt="AIR ASUM Information and Referral" /></Navbar.Brand>
+      <Navbar.Brand href="/" id='logo' bsPrefix="Logo"><Image src={logo} href="#home" alt="AIR ASUM Information and Referral" /></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" height='20px'>
          <Nav id="login-info" class="right">
@@ -29,4 +29,4 @@ class nav extends React.Component {
    }
 };
 
- export default nav;
+ //export default nav;

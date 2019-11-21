@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Nav, Button } from '../../node_modules/react-bootstrap';
 import "../CSS/exitbutton.css";
 
-class exitbutton extends React.Component{
+export default class exitbutton extends React.Component{
    render(){
       return (
          <Nav className="exit_button" id="flash-button" className="center">
@@ -12,4 +12,4 @@ class exitbutton extends React.Component{
    }
 };
 
-export default exitbutton;
+//export default exitbutton;
