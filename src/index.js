@@ -7,6 +7,7 @@ import ExitButton from './Javascript/exitbutton';
 import Homepage from './Javascript/homepage';
 import ButtonResults from './Javascript/buttonresults';
 import LoginPage from './Javascript/loginpage';
+import Survey from './Javascript/survey';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
@@ -15,13 +16,21 @@ const Notfound = () => <h1>Not found</h1>;
 const routing = (
 	<Router>
 		<div>
+         <Route
+					exact
+					path="*"
+					component={() => (
+						<div>
+                     <Navbar />
+						</div>
+					)}
+				/>
 			<Switch>
 				<Route
 					exact
 					path="/"
 					component={() => (
 						<div>
-							<Navbar />
 							<Homepage />
 							<ExitButton />
 						</div>
@@ -31,7 +40,6 @@ const routing = (
 					path="/login"
 					component={() => (
 						<div>
-							<Navbar />
 							<LoginPage />
 						</div>
 					)}
@@ -40,8 +48,25 @@ const routing = (
 					path="/buttonresults"
 					component={() => (
 						<div>
-							<Navbar />
 							<ButtonResults />
+						</div>
+					)}
+				/>
+            <Route
+					path="/survey"
+					component={() => (
+						<div>
+							<Survey />
+						</div>
+					)}
+				/>
+            <Route
+					exact
+					path="*"
+					component={() => (
+						<div>
+							<Homepage />
+							<ExitButton />
 						</div>
 					)}
 				/>
