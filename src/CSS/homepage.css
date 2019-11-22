@@ -1,5 +1,10 @@
 #parent {
    display: flex;
+   overflow-y: scroll;
+}
+
+#btn-text{
+   font-size: 30px;
 }
 
 .centered {
@@ -16,6 +21,7 @@
    background-image: url("../Images/clocktower_cropped.jpg");
    background-size: 100% 80%;
    padding-top: 10px;
+   font-size: 10%;
 
 }
 
@@ -37,13 +43,15 @@
 }
 
 .hotline-titles {
-   font-size: 20px;
+   font-size: 100%;
    display: inline-block;
 }
 
 .hotline-numbers {
-   font-size: 15px;
+   font-size: 75%;
 }
+
+
 #navbar-button {
    width: 80%;
    height: 100%;
@@ -51,22 +59,27 @@
    outline-color: #7a0f21;
    color: black;
    display: inline-block;
+   font-size: 50%;
 }
 #navbar-button-survey {
    background-color: #b8b8b8;
    outline-color: #7a0f21;
    color: black;
+   padding-bottom: 3%;
 }
 #col {
-   padding-bottom: 10px;
+   padding-bottom: 2%;
+   
 }
 
 #button-grid{
    position: relative;
    left: 0;
-   padding-bottom: 10px;
-   padding-top: 10px;
+   padding-bottom: 2%;
+   padding-top: 1%;
    text-align: center;
+   align-content: center;
+   font-size: 50%
 }
 
 #wrapper {
@@ -78,18 +91,19 @@
 }
 
 #white-space {
-   padding-bottom: 300px;
+   padding-bottom: 20%;
 }
 
 .event-component {
    position: absolute;
    width: 100%;
-   height: 50px;
+   height: 50%;
+   font-size: 20px;
 }
 #event-table {
    width: 100%;
    outline: solid black;
-   height: 50px;
+   height: 80%;
    background-color: #b8b8b8;
    color: black;
 }
@@ -98,10 +112,11 @@
    outline: solid black;
    background-color: #4D000D;
    color: white;
+   height: 10%;
 }
 
 #scrollable {
    overflow-y: scroll;
    text-align: left;
-   height: 200px;
+   height: 85%;
 }
