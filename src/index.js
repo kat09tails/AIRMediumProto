@@ -1,20 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import $ from 'jquery';
 import './CSS/index.css';
-import Navbar from './Javascript/navbar'
-import ExitButton from './Javascript/exitbutton'
-import Homepage from './Javascript/homepage'
-import ButtonResults from './Javascript/buttonresults'
+import Navbar from './Javascript/navbar';
+import ExitButton from './Javascript/exitbutton';
+import Homepage from './Javascript/homepage';
+import ButtonResults from './Javascript/buttonresults';
+import LoginPage from './Javascript/loginpage';
+
+
+const Notfound = () => <h1>Not found</h1>;
 
 const routing = (
    <Router>
       <div>
-         <Route exact path= "/" component= {Navbar} />
-         <Route exact path= "/" component= {ExitButton} />
-         <Route exact path= "/" component= {Homepage} />
-         <Route path= "/buttonresults" component = {ButtonResults} />
+         <Switch>
+            <Route exact path= "/" component= {()=>(<div><Navbar/><Homepage/><ExitButton /></div>)} />
+            <Route path= "/buttonresults" component = {()=>(<div><Navbar/><ButtonResults/></div>)} />
+            <Route path= "/login" component = {()=>(<div><Navbar/><LoginPage/></div>)} />
+            <Route exact path= "*" component= {()=>(<div><Navbar/><Homepage/><ExitButton /></div>)} />
+            <Route component={Notfound} />
+         </Switch>
       </div>
    </Router>
 )

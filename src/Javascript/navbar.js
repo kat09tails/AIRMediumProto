@@ -20,7 +20,7 @@ export default class nav extends React.Component {
       <Navbar.Collapse id="basic-navbar-nav" height='20px'>
          <Nav id="login-info" class="right">
             <Navbar.Text id="organization-text">Organization</Navbar.Text>
-            <Button id="login-button" variant="outline-light" size="sm" href='#'>Login</Button>
+            <Button id="login-button" variant="outline-light" size="sm" href='./login'>Login</Button>
          </Nav>
          
       </Navbar.Collapse>

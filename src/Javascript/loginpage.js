@@ -16,7 +16,7 @@ class Loginpage extends React.Component{
                     </p>
                 </p>
             </div>
-            <div id="main-component">
+            <div>
                 
             </div>
          </div>
