@@ -12,37 +12,6 @@ import {
 import "../CSS/loginpage.css";
 
 class Loginpage extends React.Component {
-	constructor(props) {
-		super(props);
-	}
-
-	MyVerticallyCenteredModal(props) {
-		return (
-			<Modal
-				{...this.props}
-				size="lg"
-				aria-labelledby="contained-modal-title-vcenter"
-				centered
-			>
-				<Modal.Header closeButton>
-					<Modal.Title id="contained-modal-title-vcenter">
-						Modal heading
-					</Modal.Title>
-				</Modal.Header>
-				<Modal.Body>
-					<h4>Centered Modal</h4>
-					<p>
-						Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-						dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-						ac consectetur ac, vestibulum at eros.
-					</p>
-				</Modal.Body>
-				<Modal.Footer>
-					<Button onClick={this.props.onHide}>Close</Button>
-				</Modal.Footer>
-			</Modal>
-		);
-	}
 
 	render() {
 		return (
@@ -86,7 +55,13 @@ class Loginpage extends React.Component {
 									</Button>
 								</Form>
 							</Col>
-							<Col md={{ offset: 1 }}>I am here</Col>
+							<Col md={{ offset: 1 }}>
+								<br></br>
+								<h4>
+								This login page is for Organizations ONLY. If you are part of an Organization and would like to
+								make an account, please contact Jordan Lyons at contact@email.com.
+								</h4>
+							</Col>
 						</Row>
 					</Container>
 				</div>
@@ -111,15 +86,19 @@ function UsernameModal(props) {
 			<Modal.Body>
 				<Container id="username-recovery-modal">
 					<Form>
-						<Form.Group controlId="formBasicEmail">
-							<Form.Label inline>Enter Email used for Organization</Form.Label>
-							<Form.Control inline type="username" placeholder="Email Adress" />
+						<Form.Group as={Row} controlId="form-username-recovery">
+							<Form.Label column sm="2">Enter Email used for Organization</Form.Label>
+							<Col sm="10">
+								<br></br>
+								<Form.Control type="email" placeholder="Email Address" />
+							</Col>
 						</Form.Group>
 					</Form>
 				</Container>
 			</Modal.Body>
 			<Modal.Footer>
-				<Button onClick={props.onHide}>Close</Button>
+				<Button variant="outline-primary" href="/">Submit</Button>
+				<Button variant="dark" onClick={props.onHide}>Close</Button>
 			</Modal.Footer>
 		</Modal>
 	);
@@ -139,14 +118,21 @@ function PasswordModal(props) {
 				</Modal.Title>
 			</Modal.Header>
 			<Modal.Body>
-				<p>
-					Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-					dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-					consectetur ac, vestibulum at eros.
-				</p>
+				<Container id="password-recovery-modal">
+					<Form>
+						<Form.Group as={Row} controlId="form-password-recovery">
+							<Form.Label column sm="2">Enter Organization's Username</Form.Label>
+							<Col sm="10">
+								<br></br>
+								<Form.Control type="Username" placeholder="Username" />
+							</Col>
+						</Form.Group>
+					</Form>
+				</Container>
 			</Modal.Body>
 			<Modal.Footer>
-				<Button onClick={props.onHide}>Close</Button>
+				<Button variant="outline-primary" href="/">Submit</Button>
+				<Button variant="dark" onClick={props.onHide}>Close</Button>
 			</Modal.Footer>
 		</Modal>
 	);

@@ -46,6 +46,17 @@ const routing = (
 						</div>
 					)}
 				/>
+				<Route
+					exact
+					path="*"
+					component={() => (
+						<div>
+							<Navbar />
+							<Homepage />
+							<ExitButton />
+						</div>
+					)}
+				/>
 				<Route component={Notfound} />
 			</Switch>
 		</div>
