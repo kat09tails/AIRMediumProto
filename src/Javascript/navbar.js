@@ -8,14 +8,23 @@ import * as BJS from "bootstrap/dist/js/bootstrap.js";
 import logo from "../Images/Logo.png";
 
 export default class nav extends React.Component {
+	constructor(props){
+		super(props);
+		
+	
+	}
+
+	clickLogOut() {
+		this.setState(true);
+	}
 
 	render() {
 		return (
-			<Navbar expand="xl" id="navbackground">
+			<Navbar expand="lg" id="navbackground">
 				<Navbar.Brand href="/" id="logo" bsPrefix="Logo">
 					<Image
 						src={logo}
-						href="#home"
+						href="/"
 						alt="AIR ASUM Information and Referral"
 					/>
 				</Navbar.Brand>
@@ -28,8 +37,9 @@ export default class nav extends React.Component {
 							href="./login"
 							variant="outline-light"
 							size="sm"
+							
 						>
-							Login
+							{this.props.isLoggedIn? 'Logout' : 'Login'}
 						</Button>
 					</Nav>
 				</Navbar.Collapse>

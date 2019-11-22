@@ -16,13 +16,21 @@ const Notfound = () => <h1>Not found</h1>;
 const routing = (
 	<Router>
 		<div>
+			<Route
+				exact
+				path="*"
+				component={() => (
+					<div>
+						<Navbar />
+					</div>
+				)}
+			/>
 			<Switch>
 				<Route
 					exact
 					path="/"
 					component={() => (
 						<div>
-							<Navbar />
 							<Homepage />
 							<ExitButton />
 						</div>
@@ -32,7 +40,6 @@ const routing = (
 					path="/login"
 					component={() => (
 						<div>
-							<Navbar />
 							<LoginPage />
 						</div>
 					)}
@@ -41,7 +48,6 @@ const routing = (
 					path="/buttonresults"
 					component={() => (
 						<div>
-							<Navbar />
 							<ButtonResults />
 						</div>
 					)}
@@ -51,7 +57,6 @@ const routing = (
 					path="*"
 					component={() => (
 						<div>
-							<Navbar />
 							<Homepage />
 							<ExitButton />
 						</div>

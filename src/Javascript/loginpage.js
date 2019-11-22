@@ -10,12 +10,21 @@ import {
 	ButtonToolbar
 } from "../../node_modules/react-bootstrap";
 import "../CSS/loginpage.css";
+import Nav from "./navbar"
 
 class Loginpage extends React.Component {
+
+	constructor(props){
+		super(props);
+		this.state = {
+			isLoggedIn: false
+		}
+	}
 
 	render() {
 		return (
 			<div id="login-page">
+				<Nav clickLogOut={this.clickLogOut} isLoggedIn={this.state.isLoggedIn} />
 				<div id="main-component-login">
 					<Container id="organization-login" class="centered">
 						<Row>
@@ -50,7 +59,7 @@ class Loginpage extends React.Component {
 										<Form.Control type="password" placeholder="Password" />
 										<ForgotPassword />
 									</Form.Group>
-									<Button variant="outline-primary" type="submit" href="/">
+									<Button onClick={() => this.props.clickLogout()} variant="outline-primary" type="submit" href="/">
 										Submit
 									</Button>
 								</Form>
@@ -58,8 +67,8 @@ class Loginpage extends React.Component {
 							<Col md={{ offset: 1 }}>
 								<br></br>
 								<h4>
-								This login page is for Organizations ONLY. If you are part of an Organization and would like to
-								make an account, please contact Jordan Lyons at contact@email.com.
+									This login page is for Organizations ONLY. If you are part of an Organization and would like to
+									make an account, please contact Jordan Lyons at contact@email.com.
 								</h4>
 							</Col>
 						</Row>
@@ -103,6 +112,8 @@ function UsernameModal(props) {
 		</Modal>
 	);
 }
+
+
 
 function PasswordModal(props) {
 	return (

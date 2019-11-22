@@ -14,8 +14,9 @@
 }
 
 .navbar {
-   min-height: 80px;
+   min-height: 50px;
  }
+
 
  #organization-text {
     padding-right: 10px;
