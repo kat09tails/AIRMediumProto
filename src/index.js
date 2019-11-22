@@ -10,6 +10,7 @@ import ButtonResults from "./Javascript/buttonresults";
 import LoginPage from "./Javascript/loginpage";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 const Notfound = () => <h1>Not found</h1>;
 
 const routing = (
@@ -50,6 +51,7 @@ const routing = (
 		</div>
 	</Router>
 );
+
 
 ReactDOM.render(routing, document.getElementById("root"));
 // ReactDOM.render(<div><Navbar /><Homepage /><ExitButton /> </div>, document.getElementById('root'));

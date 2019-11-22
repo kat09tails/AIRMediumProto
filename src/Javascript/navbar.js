@@ -8,6 +8,7 @@ import * as BJS from "bootstrap/dist/js/bootstrap.js";
 import logo from "../Images/Logo.png";
 
 export default class nav extends React.Component {
+
 	render() {
 		return (
 			<Navbar expand="xl" id="navbackground">
