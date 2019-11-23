@@ -1,48 +1,54 @@
 #navbackground {
-   background-color: #4D000D;
-   height: 10%;
-   text-align: right;
-   z-index: 1;
+	background-color: #4d000d;
+	height: 10%;
+	text-align: right;
+	z-index: 1;
 }
 
 #nav-div {
-   height: 10%;
-   text-align: right;
+	height: 10%;
+	text-align: right;
 }
 
 #logo {
-   color: white;
-   font-family: 'Lato', sans-serif;
-   font-size: 20px;
+	color: white;
+	font-family: "Lato", sans-serif;
+	font-size: 20px;
 }
 
 #login-button {
-   background-color: white;
-   color: black;
+	background-color: white;
+	color: black;
+	margin-right: 10px;
+}
+#add-agency-button {
+	background-color: white;
+	color: black;
+	margin-right: 10px;
+}
+#edit-agency-button {
+	background-color: white;
+	color: black;
+	margin-right: 10px;
+}
+#logout-button {
+	background-color: white;
+	color: black;
+	margin-right: 10px;
 }
 
 .navbar {
-   min-height: 80px;
- }
+	min-height: 50px;
+}
 
- #organization-text {
-    padding-right: 10px;
-    color: white;
-    font-size: 70%;
- }
+#basic-navbar-nav {
+	margin-right: auto;
+	/*color: white;*/
+	background-color: #4d000d;
+}
 
- #login-info {
-    text-align: right;
- }
-
- #basic-navbar-nav {
-   margin-right: auto;
-   /*color: white;*/
-   background-color: #4D000D;
- }
-
- .right {
-    position: absolute;
-    right: 50px;
-    align-self: center;
- }
+.right {
+	position: absolute;
+	right: 50px;
+	align-self: center;
+}
