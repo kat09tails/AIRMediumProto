@@ -11,6 +11,7 @@ import LoginPage from "./Javascript/loginpage";
 import AddAgency from "./Javascript/addagency";
 import EditAgency from "./components/AgencyEditPage";
 import Survey from "./Javascript/survey";
+import SurveyResults from "./components/SurveyResultsPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Notfound = () => <h1>Not found</h1>;
@@ -61,6 +62,14 @@ const routing = (
 						<div>
 							<Survey />
 							<ExitButton />
+						</div>
+					)}
+				/>
+				<Route
+					path="/resultspage"
+					component={() => (
+						<div>
+							<SurveyResults />
 						</div>
 					)}
 				/>
