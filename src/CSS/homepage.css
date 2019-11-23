@@ -1,6 +1,6 @@
 #parent {
    display: flex;
-   overflow-y: scroll;
+   
 }
 
 #btn-text{
@@ -12,17 +12,23 @@
    float: center;
 }
 
-#main-component {
+#main-component-home {
    position: relative;
    text-align: center;
    width: 90%;
    height: 100%;
    display: inline-block;
    background-image: url("../Images/clocktower_cropped.jpg");
-   background-size: 100% 80%;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-color: #000000;
    padding-top: 10px;
    font-size: 10%;
 
+}
+
+#help_text {
+   color: white;
 }
 
 #hotline-component {
@@ -35,6 +41,7 @@
    width: 10%;
    z-index: -1;
    float: left;
+   
 }
 
 #hotline-text {
@@ -60,12 +67,13 @@
    color: black;
    display: inline-block;
    font-size: 50%;
+   
 }
 #navbar-button-survey {
    background-color: #b8b8b8;
    outline-color: #7a0f21;
    color: black;
-   padding-bottom: 3%;
+   padding-bottom: 2%;
 }
 #col {
    padding-bottom: 2%;
@@ -79,26 +87,25 @@
    padding-top: 1%;
    text-align: center;
    align-content: center;
-   font-size: 50%
+   font-size: 50%;
 }
 
 #wrapper {
    position: relative;
    vertical-align: top;
    display: inline-block;
+   padding-bottom: 10%;
    text-align: center;
    top: 120px;
-}
-
-#white-space {
-   padding-bottom: 20%;
 }
 
 .event-component {
    position: absolute;
    width: 100%;
-   height: 50%;
+   height: 100%;
    font-size: 20px;
+
+   background-color: #cfcdcc;
 }
 #event-table {
    width: 100%;
@@ -112,7 +119,7 @@
    outline: solid black;
    background-color: #4D000D;
    color: white;
-   height: 10%;
+   height: 5%;
 }
 
 #scrollable {

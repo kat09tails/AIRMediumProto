@@ -1,0 +1,50 @@
+#survey_button {
+   background_color: black;
+   color: black;
+}
+
+#prev_and_results_button {
+   margin-left: 75%;
+}
+
+#previous_button {
+   margin-right: 2%;
+}
+
+#continue_button {
+   margin-left: 80%;
+}
+
+
+
+#table_parent {
+
+}
+
+#main_component_survey {
+   height: 100%;
+}
+
+#directions {
+   padding-top: 2%;
+}
+
+#notice {
+   color: red;
+   padding-bottom: 1%;
+   font-size: 100%;
+}
+
+#table_parent {
+   margin-left:auto; 
+   margin-right:auto;
+   width: 70%;
+}
+
+#survey-parent {
+   align-content: center;
+}
+
+#exit_button {
+   margin-left: 15%;
+}

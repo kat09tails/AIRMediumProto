@@ -18,8 +18,9 @@ import phone from "../Images/ButtonImages/phone.png";
 export default class Homepage extends React.Component{
    render (){
       return (
-         <div id="parent" class = "scrollable">
-            <div id="main-component">
+         <div id="parent">
+            <div id="main-component-home">
+               <h1 id="help_text">What resources can we help you find?</h1>
                <Container id="button-grid" class ="centered">
                   <Row>
                      <Col id="col"><Button size="lg" href = './buttonresults' id="navbar-button" variant="outline-dark" font-size="100%"><Image src={emergency} height="50%" width="50%" /><h1 id='btn-text'>Emergency</h1></Button></Col>
@@ -99,5 +100,3 @@ export default class Homepage extends React.Component{
       );
    }
 };
-
-//export default Homepage;

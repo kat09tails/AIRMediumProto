@@ -57,6 +57,7 @@ const routing = (
 					component={() => (
 						<div>
 							<Survey />
+                     <ExitButton />
 						</div>
 					)}
 				/>
