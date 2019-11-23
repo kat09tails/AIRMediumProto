@@ -41,7 +41,7 @@ export default class Homepage extends React.Component{
                      <Col id="col"><Button href = './buttonresults' id="navbar-button" variant="outline-dark"><Image src={legal} height="40%" width="40%" /><h1 id='btn-text'>Legal</h1></Button></Col>
                   </Row>
                </Container>
-               <Button height="50%" width="50%" variant="outline-dark" id="navbar-button-survey"><Image src={survey} height="10%" width="10%" /><h1 id='btn-text'>Unsure? Click to take a survey.</h1></Button>
+               <Button href = './survey' height="50%" width="50%" variant="outline-dark" id="navbar-button-survey"><Image src={survey} height="10%" width="10%" /><h1 id='btn-text'>Unsure? Click to take a survey.</h1></Button>
 
                
  

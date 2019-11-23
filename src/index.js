@@ -1,27 +1,36 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Route, Link, BrowserRouter as Router, Switch } from "react-router-dom";
-import $ from "jquery";
-import "./CSS/index.css";
-import Navbar from "./Javascript/navbar";
-import ExitButton from "./Javascript/exitbutton";
-import Homepage from "./Javascript/homepage";
-import ButtonResults from "./Javascript/buttonresults";
-import LoginPage from "./Javascript/loginpage";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import './CSS/index.css';
+import Navbar from './Javascript/navbar';
+import ExitButton from './Javascript/exitbutton';
+import Homepage from './Javascript/homepage';
+import ButtonResults from './Javascript/buttonresults';
+import LoginPage from './Javascript/loginpage';
+import Survey from './Javascript/survey';
 import "bootstrap/dist/css/bootstrap.min.css";
+import $ from "jquery";
 
 const Notfound = () => <h1>Not found</h1>;
 
 const routing = (
 	<Router>
 		<div>
+         <Route
+					exact
+					path="*"
+					component={() => (
+						<div>
+                     <Navbar />
+						</div>
+					)}
+				/>
 			<Switch>
 				<Route
 					exact
 					path="/"
 					component={() => (
 						<div>
-							<Navbar />
 							<Homepage />
 							<ExitButton />
 						</div>
@@ -31,7 +40,6 @@ const routing = (
 					path="/login"
 					component={() => (
 						<div>
-							<Navbar />
 							<LoginPage />
 						</div>
 					)}
@@ -40,8 +48,25 @@ const routing = (
 					path="/buttonresults"
 					component={() => (
 						<div>
-							<Navbar />
 							<ButtonResults />
+						</div>
+					)}
+				/>
+            <Route
+					path="/survey"
+					component={() => (
+						<div>
+							<Survey />
+						</div>
+					)}
+				/>
+            <Route
+					exact
+					path="*"
+					component={() => (
+						<div>
+							<Homepage />
+							<ExitButton />
 						</div>
 					)}
 				/>
@@ -50,6 +75,10 @@ const routing = (
 		</div>
 	</Router>
 );
+<<<<<<< HEAD
+=======
+
+>>>>>>> 59b9e1264e7404f3abe9beac194b37f0558d87fa
 
 ReactDOM.render(routing, document.getElementById("root"));
 // ReactDOM.render(<div><Navbar /><Homepage /><ExitButton /> </div>, document.getElementById('root'));
