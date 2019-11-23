@@ -57,7 +57,7 @@ export default class nav extends React.Component {
 									href="./editagency"
 									variant="outline-light"
 									size="sm"
-									disabled
+									//disabled
 								>
 									Edit Agency
 								</Button>

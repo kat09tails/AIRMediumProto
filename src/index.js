@@ -9,6 +9,7 @@ import Homepage from "./Javascript/homepage";
 import ButtonResults from "./Javascript/buttonresults";
 import LoginPage from "./Javascript/loginpage";
 import AddAgency from "./Javascript/addagency";
+import EditAgency from "./components/AgencyEditPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Notfound = () => <h1>Not found</h1>;
@@ -57,6 +58,14 @@ const routing = (
 					component={() => (
 						<div>
 							<AddAgency />
+						</div>
+					)}
+				/>
+				<Route
+					path="/editagency"
+					component={() => (
+						<div>
+							<EditAgency />
 						</div>
 					)}
 				/>
