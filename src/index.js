@@ -65,16 +65,6 @@ const routing = (
 					)}
 				/>
 				<Route
-					exact
-					path="*"
-					component={() => (
-						<div>
-							<Homepage />
-							<ExitButton />
-						</div>
-					)}
-				/>
-				<Route
 					path="/addagency"
 					component={() => (
 						<div>
