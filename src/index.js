@@ -8,8 +8,8 @@ import ExitButton from "./Javascript/exitbutton";
 import Homepage from "./Javascript/homepage";
 import ButtonResults from "./Javascript/buttonresults";
 import LoginPage from "./Javascript/loginpage";
+import AddAgency from "./Javascript/addagency";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 
 const Notfound = () => <h1>Not found</h1>;
 
@@ -62,12 +62,20 @@ const routing = (
 						</div>
 					)}
 				/>
+				<Route
+					exact
+					path="/addagency"
+					component={() => (
+						<div>
+							<AddAgency />
+						</div>
+					)}
+				/>
 				<Route component={Notfound} />
 			</Switch>
 		</div>
 	</Router>
 );
-
 
 ReactDOM.render(routing, document.getElementById("root"));
 // ReactDOM.render(<div><Navbar /><Homepage /><ExitButton /> </div>, document.getElementById('root'));
