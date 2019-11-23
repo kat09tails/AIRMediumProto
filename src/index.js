@@ -49,6 +49,7 @@ const routing = (
 					component={() => (
 						<div>
 							<ButtonResults />
+                     <ExitButton />
 						</div>
 					)}
 				/>

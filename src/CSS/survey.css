@@ -1,5 +1,5 @@
 #survey_button {
-   background_color: black;
+   background-color: black;
    color: black;
 }
 
@@ -15,14 +15,9 @@
    margin-left: 80%;
 }
 
-
-
-#table_parent {
-
-}
-
 #main_component_survey {
    height: 100%;
+   /*background-image: url("../Images/clocktower_cropped.jpg");*/
 }
 
 #directions {
