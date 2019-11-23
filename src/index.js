@@ -75,10 +75,6 @@ const routing = (
 		</div>
 	</Router>
 );
-<<<<<<< HEAD
-=======
-
->>>>>>> 59b9e1264e7404f3abe9beac194b37f0558d87fa
 
 ReactDOM.render(routing, document.getElementById("root"));
 // ReactDOM.render(<div><Navbar /><Homepage /><ExitButton /> </div>, document.getElementById('root'));
