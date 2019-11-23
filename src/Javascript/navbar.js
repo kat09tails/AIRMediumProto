@@ -10,7 +10,8 @@ import logo from "../Images/Logo.png";
 export default class nav extends React.Component {
 	render() {
 		return (
-			<Navbar expand="xl" id="navbackground">
+         <div id="nav-div">
+			<Navbar expand ='sm' id="navbackground" sticky="top">
 				<Navbar.Brand href="/" id="logo" bsPrefix="Logo">
 					<Image
 						src={logo}
@@ -19,7 +20,7 @@ export default class nav extends React.Component {
 					/>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
-				<Navbar.Collapse id="basic-navbar-nav" height="20px">
+				<Navbar.Collapse>
 					<Nav id="login-info" class="right">
 						<Navbar.Text id="organization-text">Organization</Navbar.Text>
 						<Button
@@ -33,6 +34,7 @@ export default class nav extends React.Component {
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>
+         </div>
 		);
 	}
 }

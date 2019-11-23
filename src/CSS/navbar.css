@@ -1,6 +1,13 @@
 #navbackground {
    background-color: #4D000D;
-   height: 50%;
+   height: 10%;
+   text-align: right;
+   z-index: 1;
+}
+
+#nav-div {
+   height: 10%;
+   text-align: right;
 }
 
 #logo {
@@ -21,6 +28,7 @@
  #organization-text {
     padding-right: 10px;
     color: white;
+    font-size: 70%;
  }
 
  #login-info {
