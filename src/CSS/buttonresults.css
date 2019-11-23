@@ -3,6 +3,12 @@
    
 }
 
+#br-back-button {
+   margin-top: 2%;
+   margin-left: 80%;
+   margin-bottom: 2%;
+}
+
 #btn-text{
    font-size: 30px;
 }
@@ -12,7 +18,7 @@
    float: center;
 }
 
-#main-component-home {
+#main-component-btn-results {
    position: relative;
    text-align: center;
    width: 90%;
@@ -28,6 +34,7 @@
 }
 
 #help_text {
+   padding-top: 2%;
    color: white;
 }
 

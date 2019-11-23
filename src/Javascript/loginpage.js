@@ -113,7 +113,11 @@ function UsernameModal(props) {
 					<Form>
 						<Form.Group controlId="formBasicEmail">
 							<Form.Label inline>Enter Email used for Organization</Form.Label>
-							<Form.Control inline type="username" placeholder="Email Adress" />
+							<Form.Control
+								inline
+								type="username"
+								placeholder="Email Address"
+							/>
 						</Form.Group>
 					</Form>
 				</Container>

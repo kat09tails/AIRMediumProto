@@ -9,7 +9,7 @@ import ButtonResults from './Javascript/buttonresults';
 import LoginPage from './Javascript/loginpage';
 import Survey from './Javascript/survey';
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import $ from "jquery";
 
 const Notfound = () => <h1>Not found</h1>;
 
@@ -49,6 +49,7 @@ const routing = (
 					component={() => (
 						<div>
 							<ButtonResults />
+                     <ExitButton />
 						</div>
 					)}
 				/>
@@ -57,6 +58,7 @@ const routing = (
 					component={() => (
 						<div>
 							<Survey />
+                     <ExitButton />
 						</div>
 					)}
 				/>
@@ -75,7 +77,6 @@ const routing = (
 		</div>
 	</Router>
 );
-
 
 ReactDOM.render(routing, document.getElementById("root"));
 // ReactDOM.render(<div><Navbar /><Homepage /><ExitButton /> </div>, document.getElementById('root'));
