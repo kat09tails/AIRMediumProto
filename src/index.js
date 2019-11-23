@@ -53,6 +53,14 @@ const routing = (
 					)}
 				/>
 				<Route
+					path="/addagency"
+					component={() => (
+						<div>
+							<AddAgency />
+						</div>
+					)}
+				/>
+				<Route
 					exact
 					path="*"
 					component={() => (
@@ -62,15 +70,7 @@ const routing = (
 						</div>
 					)}
 				/>
-				<Route
-					exact
-					path="/addagency"
-					component={() => (
-						<div>
-							<AddAgency />
-						</div>
-					)}
-				/>
+
 				<Route component={Notfound} />
 			</Switch>
 		</div>
