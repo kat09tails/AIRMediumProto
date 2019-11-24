@@ -81,7 +81,7 @@ class Loginpage extends React.Component {
 										<Form.Control type="password" placeholder="Password" />
 										<ForgotPassword />
 									</Form.Group>
-									<Button variant="outline-primary" type="submit" href="/">
+									<Button variant="outline-primary" type="submit" href="/" >
 										Submit
 									</Button>
 								</Form>
