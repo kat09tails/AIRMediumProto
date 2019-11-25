@@ -39,3 +39,14 @@
   padding-left: 30px;
   padding-right: 70px;
 }
+
+.ServiceEditingChunk1 {
+  float: left;
+  padding-left: 70px;
+}
+
+.ServiceDescriptionField {
+  float: left;
+  padding-left: 70px;
+  padding-right: 30px;
+}
