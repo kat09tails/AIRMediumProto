@@ -62,7 +62,7 @@ export default class nav extends React.Component {
 									Edit Agency
 								</Button>
 							</div>
-							<div>
+						{/* 	<div>
 								<Button
 									id="login-button"
 									variant="outline-light"
@@ -71,7 +71,7 @@ export default class nav extends React.Component {
 								>
 									Click to enable buttons
 								</Button>
-							</div>
+							</div> */}
 							<div>
 								<Button
 									id="login-button"
