@@ -1,30 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import './CSS/index.css';
-import Navbar from './Javascript/navbar';
-import ExitButton from './Javascript/exitbutton';
-import Homepage from './Javascript/homepage';
-import ButtonResults from './Javascript/buttonresults';
-import LoginPage from './Javascript/loginpage';
-import Survey from './Javascript/survey';
-import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
+import ReactDOM from "react-dom";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import $ from "jquery";
+import "./CSS/index.css";
+import Navbar from "./Javascript/navbar";
+import ExitButton from "./Javascript/exitbutton";
+import Homepage from "./Javascript/homepage";
+import ButtonResults from "./Javascript/buttonresults";
+import LoginPage from "./Javascript/loginpage";
+import AddAgency from "./Javascript/addagency";
+import EditAgency from "./components/AgencyEditPage";
+import Survey from "./Javascript/survey";
+import SurveyResults from "./components/SurveyResultsPage";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Notfound = () => <h1>Not found</h1>;
 
 const routing = (
 	<Router>
 		<div>
-         <Route
-					exact
-					path="*"
-					component={() => (
-						<div>
-                     <Navbar />
-						</div>
-					)}
-				/>
+			<Route
+				exact
+				path="*"
+				component={() => (
+					<div>
+						<Navbar />
+					</div>
+				)}
+			/>
 			<Switch>
 				<Route
 					exact
@@ -49,20 +52,44 @@ const routing = (
 					component={() => (
 						<div>
 							<ButtonResults />
-                     <ExitButton />
+							<ExitButton />
 						</div>
 					)}
 				/>
-            <Route
+				<Route
 					path="/survey"
 					component={() => (
 						<div>
 							<Survey />
-                     <ExitButton />
+							<ExitButton />
 						</div>
 					)}
 				/>
-            <Route
+				<Route
+					path="/resultspage"
+					component={() => (
+						<div>
+							<SurveyResults />
+						</div>
+					)}
+				/>
+				<Route
+					path="/addagency"
+					component={() => (
+						<div>
+							<AddAgency />
+						</div>
+					)}
+				/>
+				<Route
+					path="/editagency"
+					component={() => (
+						<div>
+							<EditAgency />
+						</div>
+					)}
+				/>
+				<Route
 					exact
 					path="*"
 					component={() => (
@@ -72,6 +99,7 @@ const routing = (
 						</div>
 					)}
 				/>
+
 				<Route component={Notfound} />
 			</Switch>
 		</div>
