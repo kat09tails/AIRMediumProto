@@ -33,7 +33,7 @@ export default class Homepage extends React.Component {
 							<Col id="col">
 								<Button
 									size="lg"
-									href="./buttonresults"
+									href="./ButtonResults"
 									id="navbar-button"
 									variant="outline-dark"
 									font-size="100%"
@@ -44,7 +44,7 @@ export default class Homepage extends React.Component {
 							</Col>
 							<Col id="col">
 								<Button
-									href="./buttonresults"
+									href="./ButtonResults"
 									id="navbar-button"
 									variant="outline-dark"
 								>
@@ -54,7 +54,7 @@ export default class Homepage extends React.Component {
 							</Col>
 							<Col id="col">
 								<Button
-									href="./buttonresults"
+									href="./ButtonResults"
 									id="navbar-button"
 									variant="outline-dark"
 								>
@@ -66,7 +66,7 @@ export default class Homepage extends React.Component {
 						<Row>
 							<Col id="col">
 								<Button
-									href="./buttonresults"
+									href="./ButtonrRsults"
 									id="navbar-button"
 									variant="outline-dark"
 								>
@@ -76,7 +76,7 @@ export default class Homepage extends React.Component {
 							</Col>
 							<Col id="col">
 								<Button
-									href="./buttonresults"
+									href="./ButtonResults"
 									id="navbar-button"
 									variant="outline-dark"
 								>
@@ -86,7 +86,7 @@ export default class Homepage extends React.Component {
 							</Col>
 							<Col id="col">
 								<Button
-									href="./buttonresults"
+									href="./ButtonResults"
 									id="navbar-button"
 									variant="outline-dark"
 								>
@@ -98,7 +98,7 @@ export default class Homepage extends React.Component {
 						<Row>
 							<Col id="col">
 								<Button
-									href="./buttonresults"
+									href="./ButtonResults"
 									id="navbar-button"
 									variant="outline-dark"
 								>
@@ -108,7 +108,7 @@ export default class Homepage extends React.Component {
 							</Col>
 							<Col id="col">
 								<Button
-									href="./buttonresults"
+									href="./ButtonResults"
 									id="navbar-button"
 									variant="outline-dark"
 								>
@@ -118,7 +118,7 @@ export default class Homepage extends React.Component {
 							</Col>
 							<Col id="col">
 								<Button
-									href="./buttonresults"
+									href="./ButtonResults"
 									id="navbar-button"
 									variant="outline-dark"
 								>
@@ -130,7 +130,7 @@ export default class Homepage extends React.Component {
 						<Row>
 							<Col id="col">
 								<Button
-									href="./buttonresults"
+									href="./ButtonResults"
 									id="navbar-button"
 									variant="outline-dark"
 								>
@@ -140,7 +140,7 @@ export default class Homepage extends React.Component {
 							</Col>
 							<Col id="col">
 								<Button
-									href="./buttonresults"
+									href="./ButtonResults"
 									id="navbar-button"
 									variant="outline-dark"
 								>
@@ -151,7 +151,7 @@ export default class Homepage extends React.Component {
 						</Row>
 					</Container>
 					<Button
-						href="./survey"
+						href="./Survey"
 						height="50%"
 						width="50%"
 						variant="outline-dark"

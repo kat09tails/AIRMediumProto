@@ -12,7 +12,7 @@ function CategoryResultsPage() {
     <div>
       <Jumbotron>
         <h4>[Category] Results: </h4>
-        <Button id="printSaveShare"><h6>Print / Save / Share</h6></Button>
+        <Button id="printSaveShare" variant="dark"><h6>Print / Save / Share</h6></Button>
       </Jumbotron>
       <SurveyResult />
       <br />

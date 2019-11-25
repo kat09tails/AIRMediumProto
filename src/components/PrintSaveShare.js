@@ -11,7 +11,7 @@ function PrintSaveShare() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="dark" onClick={handleShow}>
         Print / Save / Share
       </Button>
 
@@ -20,14 +20,14 @@ function PrintSaveShare() {
           <Modal.Title>Print / Save / Share</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Button variant="primary">
+          <Button variant="dark">
             Print
           </Button>
           <SaveDropdown id="saveDropdownLoc" />
           <p>Copy link to share: https://FakeLinkIMadeUp.url.umt.mt.edu.gov.com</p>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="dark" onClick={handleClose}>
             Close
           </Button>
         </Modal.Footer>

@@ -50,3 +50,13 @@
   padding-left: 70px;
   padding-right: 30px;
 }
+
+#resultCard {
+  background-color: #4D000D;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.text-color {
+  color: white;
+}

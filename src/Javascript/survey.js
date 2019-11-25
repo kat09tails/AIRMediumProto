@@ -133,7 +133,7 @@ export default class Survey extends React.Component {
 						onClick={this.handleContinue}
 						id="survey_button"
 						id="continue_button"
-						variant="success"
+						variant="dark"
 					>
 						Continue
 					</Button>
@@ -151,7 +151,7 @@ export default class Survey extends React.Component {
 						Previous
 					</Button>
 					<Button
-						href="/resultspage"
+						href="/SurveyResults"
 						id="survey_button"
 						id="see_results_button"
 						variant="dark"

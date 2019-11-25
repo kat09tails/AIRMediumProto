@@ -64,7 +64,7 @@ class Loginpage extends React.Component {
 									</Form.Group>
 									<Button
 										onClick={this.showButtons}
-										variant="outline-primary"
+										variant="dark"
 										type="submit"
 										href="/"
 									>

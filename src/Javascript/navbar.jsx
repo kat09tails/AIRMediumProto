@@ -43,7 +43,7 @@ export default class nav extends React.Component {
 							<div display="hidden">
 								<Button
 									id="add-agency-button"
-									href="./addagency"
+									href="./AddAgency"
 									variant="outline-light"
 									size="sm"
 									//disabled
@@ -54,7 +54,7 @@ export default class nav extends React.Component {
 							<div>
 								<Button
 									id="edit-agency-button"
-									href="./editagency"
+									href="./EditAgency"
 									variant="outline-light"
 									size="sm"
 									//disabled

@@ -1,6 +1,7 @@
 import React from "react"
 import Accordion from "react-bootstrap/Accordion"
 import Card from "react-bootstrap/Card"
+import Button from "react-bootstrap/Button"
 import { useAccordionToggle } from 'react-bootstrap/AccordionToggle';
 import "./ComponentStyle.css"
 import ResultMoreInfoBody from './ResultMoreInfoBody'
@@ -16,13 +17,14 @@ function CustomToggle({ children, eventKey }) {
         <h5 style = {{float: "left"}}>Agency Name Here : WWW.Website.com</h5>
       </div>
       <div>
-        <button
+        <Button
           type="button"
-          style={{ backgroundColor: 'blue'}, {float: "right"}}
+          variant="dark"
+          style={{float: "right"}}
           onClick={decoratedOnClick}
         >
           {children}
-        </button>
+        </Button>
       </div>
     </div>
   );

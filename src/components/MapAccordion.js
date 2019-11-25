@@ -15,7 +15,7 @@ class MapAccordion extends React.Component{
               <Accordion.Toggle as={Button} variant="link" eventKey="0">
                 Click here to view on Map
               </Accordion.Toggle>
-              <Button id='moreInfoButton'><p>Visit Agency Page</p></Button>
+              <Button id='moreInfoButton' variant="dark"><p>Visit Agency Page</p></Button>
             </Card.Header>
             <Accordion.Collapse eventKey="0">
               <Card.Body>

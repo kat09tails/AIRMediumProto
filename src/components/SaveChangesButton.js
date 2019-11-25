@@ -11,7 +11,7 @@ function SaveChangesButton() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="dark" onClick={handleShow}>
         Save Changes
       </Button>
 
@@ -20,12 +20,12 @@ function SaveChangesButton() {
           <Modal.Title>Are You Sure?</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Button variant="primary">
+          <Button variant="success">
             Yes, Save Changes
           </Button>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="dark" onClick={handleClose}>
             Close
           </Button>
         </Modal.Footer>

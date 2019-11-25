@@ -12,6 +12,7 @@ import AddAgency from "./Javascript/addagency";
 import EditAgency from "./components/AgencyEditPage";
 import Survey from "./Javascript/survey";
 import SurveyResults from "./components/SurveyResultsPage";
+import CategoryResults from "./components/CategoryResultsPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Notfound = () => <h1>Not found</h1>;
@@ -48,7 +49,7 @@ const routing = (
 					)}
 				/>
 				<Route
-					path="/buttonresults"
+					path="/ButtonResults"
 					component={() => (
 						<div>
 							<ButtonResults />
@@ -57,7 +58,7 @@ const routing = (
 					)}
 				/>
 				<Route
-					path="/survey"
+					path="/Survey"
 					component={() => (
 						<div>
 							<Survey />
@@ -66,7 +67,7 @@ const routing = (
 					)}
 				/>
 				<Route
-					path="/resultspage"
+					path="/SurveyResults"
 					component={() => (
 						<div>
 							<SurveyResults />
@@ -74,7 +75,15 @@ const routing = (
 					)}
 				/>
 				<Route
-					path="/addagency"
+					path="/CategoryResults"
+					component={() => (
+						<div>
+							<CategoryResults />
+						</div>
+					)}
+				/>
+				<Route
+					path="/AddAgency"
 					component={() => (
 						<div>
 							<AddAgency />
@@ -82,7 +91,7 @@ const routing = (
 					)}
 				/>
 				<Route
-					path="/editagency"
+					path="/EditAgency"
 					component={() => (
 						<div>
 							<EditAgency />
