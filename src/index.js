@@ -13,6 +13,7 @@ import EditAgency from "./components/AgencyEditPage";
 import Survey from "./Javascript/survey";
 import SurveyResults from "./components/SurveyResultsPage";
 import CategoryResults from "./components/CategoryResultsPage";
+import AgencyInfoPage from "./components/AgencyInfoPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Notfound = () => <h1>Not found</h1>;
@@ -95,6 +96,14 @@ const routing = (
 					component={() => (
 						<div>
 							<EditAgency />
+						</div>
+					)}
+				/>
+				<Route
+					path="/AgencyInfoPage"
+					component={() => (
+						<div>
+							<AgencyInfoPage />
 						</div>
 					)}
 				/>

@@ -1,9 +1,10 @@
 import React from 'react';
-import { Row, Col, Image, Button, Jumbotron } from 'react-bootstrap'
-import Accordion from 'react-bootstrap/Accordion'
-import SurveyResultSection from './SurveyResultSection.js'
-import SurveyResult from './SurveyResult'
-import './ComponentStyle.css'
+import { Row, Col, Image, Button, Jumbotron } from 'react-bootstrap';
+import Accordion from 'react-bootstrap/Accordion';
+import SurveyResultSection from './SurveyResultSection.js';
+import SurveyResult from './SurveyResult';
+import PrintSaveShare from "./PrintSaveShare";
+import './ComponentStyle.css';
 
 
 
@@ -12,7 +13,9 @@ function CategoryResultsPage() {
     <div>
       <Jumbotron>
         <h4>[Category] Results: </h4>
-        <Button id="printSaveShare" variant="dark"><h6>Print / Save / Share</h6></Button>
+        <div id="printSaveShare">
+          <PrintSaveShare />
+        </div>
       </Jumbotron>
       <SurveyResult />
       <br />
